@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/grid.css" type="text/css">
+  </head>
+  <body>
+    <template id="template">
+      <div class="two parent">
+        <div class="side">This is side</div>
+        <div class="main">This is main</div>
+      </div>
+      <div class="three parent">
+        <div class="side-left">This is side</div>
+        <div class="main">This is main</div>
+        <div class="side-right">This is side</div>
+      </div>
+      <div class="items parent">
+        <div class="item">
+          <div>Item!!!</div>
+          <div>Item!</div>
+          <div>Item!!</div>
+        </div>
+        <div class="item">
+          <div>Item!!!</div>
+          <div>Item!</div>
+          <div>Item!!</div>
+        </div>
+        <div class="item">
+          <div>Item!!!</div>
+          <div>Item!</div>
+          <div>Item!!</div>
+        </div>
+        <div class="item">
+          <div>Item!!!</div>
+          <div>Item!</div>
+          <div>Item!!</div>
+        </div>
+      </div>
+    </template>
+    <div id="neat"></div>
+    <div id="susy"></div>
+    <script>
+      var tmp = document.querySelector("#template")
+      var selectors = ["#neat", "#susy", "#profound"]
+      selectors.map(function(selector){
+        var c = tmp.content.cloneNode(true)
+        var doc = document.querySelector(selector)
+        if(!doc){ return }
+        doc.appendChild(c)
+      })
+    </script>
+  <body>
+</html>

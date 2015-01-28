@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <link rel="stylesheet" src="./grid.css" />
+    <style type="text/css">
+      .parent{
+        width: 100%;
+      }
+      .two{
+        background: #b0a9e5;
+      }
+      .three{
+        background: #e7c0ac;
+      }
+      .items{
+        background: #ace7b3;
+      }
+      .item{
+        background: #e8eab1;
+      }
+    </style>
+  </head>
+  <body>
+    <template id="tmplate">
+      <div class="two parent">
+        <div class="side">This is side</div>
+        <div class="main">This is main</div>
+      </div>
+      <div class="three parent">
+        <div class="side-left">This is side</div>
+        <div class="main">This is main</div>
+        <div class="side-right">This is side</div>
+      </div>
+      <div class="items parent">
+        <div class="item">
+          <div>Item!!</div>
+          <div>Item!!</div>
+          <div>Item!!</div>
+        </div>
+        <div class="item">
+          <div>Item!!</div>
+          <div>Item!!</div>
+          <div>Item!!</div>
+        </div>
+        <div class="item">
+          <div>Item!!</div>
+          <div>Item!!</div>
+          <div>Item!!</div>
+        </div>
+        <div class="item">
+          <div>Item!!</div>
+          <div>Item!!</div>
+          <div>Item!!</div>
+        </div>
+      </div>
+    </template>
+    <div id="neat"></div>
+    <div id="susy"></div>
+    <script>
+    var tmp = document.querySelector("#template")
+    document.querySelector("#neat").appendChild(tmp.cloneNode())
+    document.querySelector("#susy").appendChild(tmp.cloneNode())
+
+    </script>
+  <body>
+</html>

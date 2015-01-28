@@ -1,0 +1,51 @@
+.parent {
+  width: 100%;
+  background: #c4c4c4; }
+
+.two {
+  background: #b0a9e5; }
+
+.three {
+  background: #e7c0ac; }
+
+.items {
+  background: #ace7b3; }
+
+.item {
+  background: #e8eab1; }
+
+#neat {
+  /* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */ }
+  #neat html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  #neat *, #neat *:before, #neat *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit; }
+  #neat .two {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    #neat .two:after {
+      content: "";
+      display: table;
+      clear: both; }
+    #neat .two .side {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      #neat .two .side:last-child {
+        margin-right: 0; }
+    #neat .two .main {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      #neat .two .main:last-child {
+        margin-right: 0; }
