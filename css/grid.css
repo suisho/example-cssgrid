@@ -1,11 +1,13 @@
 .parent {
-  width: 100%;
-  background: #c4c4c4; }
+  margin: 1em;
+  background: #dcdcdc; }
 
-.two {
+.two .block {
   background: #b0a9e5; }
+.two div {
+  height: 3em; }
 
-.three {
+.three .block {
   background: #e7c0ac; }
 
 .items {
@@ -46,6 +48,54 @@
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 48.82117%; }
+      width: 65.88078%; }
       #neat .two .main:last-child {
         margin-right: 0; }
+  #neat .three {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    #neat .three:after {
+      content: "";
+      display: table;
+      clear: both; }
+    #neat .three .side-left {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      #neat .three .side-left:last-child {
+        margin-right: 0; }
+    #neat .three .main {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      #neat .three .main:last-child {
+        margin-right: 0; }
+    #neat .three .side-right {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 14.70196%; }
+      #neat .three .side-right:last-child {
+        margin-right: 0; }
+  #neat .items {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    #neat .items:after {
+      content: "";
+      display: table;
+      clear: both; }
+    #neat .items .item {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      #neat .items .item:last-child {
+        margin-right: 0; }
+      #neat .items .item:nth-child(3n) {
+        margin-right: 0; }
+      #neat .items .item:nth-child(3n+1) {
+        clear: left; }
