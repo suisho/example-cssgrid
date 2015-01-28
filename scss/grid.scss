@@ -53,8 +53,18 @@
   .items{
     @include outer-container();
     .item{
-      @include span-columns(4);
-      @include omega(3n); // めんどいのはこれかなあ。
+      @include span-columns(3);
+      @include omega(4n); // めんどいのはこれかなあ。
+    }
+  }
+}
+
+#susy{
+  @import "susy/susy";
+  .two{
+    @include container;
+    .side{
+      @include
     }
   }
 }

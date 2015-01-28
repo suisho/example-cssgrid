@@ -92,10 +92,10 @@
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 31.76157%; }
+      width: 23.23176%; }
       #neat .items .item:last-child {
         margin-right: 0; }
-      #neat .items .item:nth-child(3n) {
+      #neat .items .item:nth-child(4n) {
         margin-right: 0; }
-      #neat .items .item:nth-child(3n+1) {
+      #neat .items .item:nth-child(4n+1) {
         clear: left; }
