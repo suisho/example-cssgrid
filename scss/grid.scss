@@ -60,11 +60,40 @@
 }
 
 #susy{
+  @import "bourbon/bourbon";
   @import "susy/susy";
+  $susy: (
+    columns: 12,
+    output: float,
+    math: fluid,
+    last-flow: to,
+  
+  );
   .two{
-    @include container;
+    @include container();
     .side{
-      @include
+      @include span(4);
+    }
+    .main{
+      @include span(8 last);
+    }
+  }
+  .three{
+    @include container();
+    .side-left{
+      @include span(4);
+    }
+    .main{
+      @include span(6);
+    }
+    .side-right{
+      @include span(2 last);
+    }
+  }
+  .items{
+    @include container(1000px);
+    .item{
+      @include span(3);
     }
   }
 }
