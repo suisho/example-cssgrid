@@ -53,8 +53,8 @@
   .items{
     @include outer-container();
     .item{
-      @include span-columns(3);
-      @include omega(4n); // めんどいのはこれかなあ。
+      @include span-columns(4);
+      @include omega(3n); // めんどいのはこれかなあ。
     }
   }
 }
@@ -63,11 +63,7 @@
   @import "bourbon/bourbon";
   @import "susy/susy";
   $susy: (
-    columns: 12,
-    output: float,
-    math: fluid,
-    last-flow: to,
-  
+    container-position: center
   );
   .two{
     @include container();
@@ -93,7 +89,7 @@
   .items{
     @include container(1000px);
     .item{
-      @include span(3);
+      @include gallery(4);
     }
   }
 }
