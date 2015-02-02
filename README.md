@@ -1,4 +1,5 @@
-# neat
+# Installation対決
+### neat
 
 ```
 gem install bourbon
@@ -7,11 +8,44 @@ bourbon install
 neat install
 ```
 
-# susy
+### susy
 
 http://susydocs.oddbird.net/en/latest/install/
 
 単体でのインストールするならgithubからzipか。npmからコピーか？
+
+### 結論
+neatの圧勝
+
+### gallery
+
+
+### swap
+左右入れ替えに関してはやりやすい。毎回lastを気にしなければいけないのが逆手に取れる。
+
+```これを...css
+.two{
+  @include container();
+  .side{
+    @include span(4);
+  }
+  .main{
+    @include span(8 last);
+  }
+}
+```
+
+```こうじゃ！.css
+.two{
+  @include container();
+  .side{
+    @include span(4 last);
+  }
+  .main{
+    @include span(8);
+  }
+}
+```
 
 # Profound grid
 
