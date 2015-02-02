@@ -15,10 +15,13 @@ http://susydocs.oddbird.net/en/latest/install/
 単体でのインストールするならgithubからzipか。npmからコピーか？
 
 ### 結論
-neatの圧勝
+neatの方が綺麗
+
+# 機能面
+
+## Susy
 
 ### gallery
-
 
 ### swap
 左右入れ替えに関してはやりやすい。毎回lastを気にしなければいけないのが逆手に取れる。
@@ -46,6 +49,11 @@ neatの圧勝
   }
 }
 ```
+
+# IE8 compability
+
+## neat
+:last-childを使っているので、
 
 # Profound grid
 
