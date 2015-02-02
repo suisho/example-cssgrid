@@ -23,6 +23,11 @@ neatの方が綺麗
 
 ### gallery
 
+```
+@include galelly(3)
+```
+IE8だとうまくいかなそう。
+
 ### swap
 左右入れ替えに関してはやりやすい。毎回lastを気にしなければいけないのが逆手に取れる。
 
@@ -53,7 +58,10 @@ neatの方が綺麗
 # IE8 compability
 
 ## neat
-:last-childを使っているので、
+:last-childを使っているので、selectivizrが必要そう
+
+## susy
+
 
 # Profound grid
 
