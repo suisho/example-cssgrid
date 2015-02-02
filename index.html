@@ -37,11 +37,11 @@
         </div>
       </div>
     </template>
-    <div id="neat"></div>
-    <div id="susy"></div>
+    <div id="neat" class="neat"></div>
+    <div id="susy" class="susy"></div>
     <script>
       var tmp = document.querySelector("#template")
-      var selectors = ["#neat", "#susy", "#profound"]
+      var selectors = ["#neat", "#susy"]
       selectors.map(function(selector){
         var c = tmp.content.cloneNode(true)
         var doc = document.querySelector(selector)

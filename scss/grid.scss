@@ -25,7 +25,7 @@
 }
 
 
-#neat{
+.neat{
   @import "bourbon/bourbon";
   @import "neat/neat";
   .two{
@@ -59,12 +59,17 @@
   }
 }
 
-#susy{
-  @import "bourbon/bourbon";
+.susy{
+  //@import "bourbon/bourbon";
   @import "susy/susy";
+  @include container(1000px);
   $susy: (
-    container-position: center
+    columns: 12, // 絶対に設定が必要
+//    output: float,
+//    math: fluid,
+//    last-flow: to,
   );
+  
   .two{
     @include container();
     .side{
@@ -87,7 +92,7 @@
     }
   }
   .items{
-    @include container(1000px);
+    @include container;
     .item{
       @include gallery(4);
     }
