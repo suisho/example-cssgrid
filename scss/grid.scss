@@ -28,6 +28,8 @@
 .neat{
   @import "bourbon/bourbon";
   @import "neat/neat";
+  @include outer-container();
+
   .two{
     @include outer-container();
     @include clearfix();
@@ -61,12 +63,12 @@
       @include omega(3n); // めんどいのはこれかなあ。
     }
   }
+  @include clearfix();
 }
 
 .susy{
   //@import "bourbon/bourbon";
   @import "susy/susy";
-  @include container(1000px);
   $susy: (
     columns: 12, // 絶対に設定が必要
 //    output: float,
