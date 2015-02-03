@@ -38,6 +38,7 @@
     }
     .main{
       @include span-columns(8);
+      @include omega();
     }
   }
 
