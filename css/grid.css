@@ -37,6 +37,10 @@
       content: "";
       display: table;
       clear: both; }
+    .neat .two:after {
+      content: "";
+      display: table;
+      clear: both; }
     .neat .two .side {
       float: left;
       display: block;
@@ -55,6 +59,10 @@
     max-width: 68em;
     margin-left: auto;
     margin-right: auto; }
+    .neat .three:after {
+      content: "";
+      display: table;
+      clear: both; }
     .neat .three:after {
       content: "";
       display: table;
@@ -84,6 +92,10 @@
     max-width: 68em;
     margin-left: auto;
     margin-right: auto; }
+    .neat .items:after {
+      content: "";
+      display: table;
+      clear: both; }
     .neat .items:after {
       content: "";
       display: table;

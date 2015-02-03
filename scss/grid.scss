@@ -30,6 +30,7 @@
   @import "neat/neat";
   .two{
     @include outer-container();
+    @include clearfix();
     .side{
       @include span-columns(4);
     }
@@ -40,6 +41,7 @@
 
   .three{
     @include outer-container();
+    @include clearfix();
     .side-left{
       @include span-columns(4);
     }
@@ -52,6 +54,8 @@
   }
   .items{
     @include outer-container();
+    @include clearfix();
+
     .item{
       @include span-columns(4);
       @include omega(3n); // めんどいのはこれかなあ。
@@ -68,6 +72,9 @@
 //    output: float,
 //    math: fluid,
 //    last-flow: to,
+    use-custom : (
+      clearfix:true
+    )
   );
   
   .two{
