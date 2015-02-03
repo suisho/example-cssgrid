@@ -53,6 +53,7 @@
     }
     .side-right{
       @include span-columns(2);
+      @include omega();
     }
   }
   .items{
