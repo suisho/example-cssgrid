@@ -120,6 +120,10 @@
         margin-right: 0; }
       .neat .items .item:nth-child(3n+1) {
         clear: left; }
+    .neat .items .item:after {
+      content: "";
+      display: table;
+      clear: both; }
   .neat:after {
     content: "";
     display: table;

@@ -24,7 +24,9 @@
     background: #e8eab1;
 }
 
-
+.grid{
+  @include clearfix();
+}
 .neat{
   @import "bourbon/bourbon";
   @import "neat/neat";
@@ -63,6 +65,9 @@
     .item{
       @include span-columns(4);
       @include omega(3n); // めんどいのはこれかなあ。
+    }
+    .item{
+      @include clearfix();
     }
   }
   @include clearfix();
