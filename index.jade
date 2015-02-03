@@ -9,26 +9,27 @@ html
     <![endif]-->
 
   body
-    .grid(class=type)
-      .two.parent
-        .side.block This is side
-        .main.block This is main
-      .three.parent
-        .side-left.block This is side
-        .main.block This is main
-        .side-right.block This is side
-      .items.parent
-        .item
-          div 1
-        .item
-          div 2
-        .item
-          div 3
-        .item
-          div 4
-        .item
-          div 5
-        .item
-          div 6
-        .item
-          div 7
+    each type in ["neat", "susy"]
+      .grid(class=type)
+        .two.parent
+          .side.block This is side
+          .main.block This is main
+        .three.parent
+          .side-left.block This is side
+          .main.block This is main
+          .side-right.block This is side
+        .items.parent
+          .item
+            div 1
+          .item
+            div 2
+          .item
+            div 3
+          .item
+            div 4
+          .item
+            div 5
+          .item
+            div 6
+          .item
+            div 7
