@@ -21,31 +21,22 @@
   background: #ace7b3;
 }
 .item{
-    background: #e8eab1;
+  background: #e8eab1;
 }
-@import "bourbon/bourbon";
-@import "neat/neat";
-
-/*@mixin clearfix() {
-  //*zoom: 1;
-  &:after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-}*/
 
 
 .neat{
+  @import "bourbon/bourbon";
+  @import "neat/neat";
+
   .two{
     @include outer-container();
-
     .side{
       @include span-columns(4);
     }
     .main{
       @include span-columns(8);
-    //  @include omega(); // for IE8
+      @include omega(); // for IE8
     }
   }
 
@@ -76,18 +67,8 @@
   @import "susy/susy";
   $susy: (
     columns: 12, // 絶対に設定が必要
-//    output: float,
-//    math: fluid,
-//    last-flow: to,
-    container-position : left,
-    debug: (
-      image: hide,
-      color: rgba(#66f, .25),
-      output: background,
-      toggle: top right,
-    ),
   );
-  
+
   .two{
     @include container();
     .side{
@@ -110,13 +91,9 @@
     }
   }
   .items{
-    $susy: (
-      columns: 12,
-      gutter-position:inside,
-    );
-    @include container;
+    @include container();
     .item{
-      @include gallery(4);
+      @include span(4 inside);
     }
   }
 }
