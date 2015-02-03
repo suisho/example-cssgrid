@@ -37,7 +37,6 @@
 
 
 .neat{
-  //@include outer-container();
   .two{
     @include outer-container();
 
@@ -46,7 +45,7 @@
     }
     .main{
       @include span-columns(8);
-      @include omega(); // for IE8
+    //  @include omega(); // for IE8
     }
   }
 
@@ -65,7 +64,6 @@
   }
   .items{
     @include outer-container();
-    
     .item{
       @include span-columns(4);
       @include omega(3n); // めんどいのはこれかなあ。
@@ -81,9 +79,13 @@
 //    output: float,
 //    math: fluid,
 //    last-flow: to,
-    use-custom : (
-      //clearfix:true
-    )
+    container-position : left,
+    debug: (
+      image: hide,
+      color: rgba(#66f, .25),
+      output: background,
+      toggle: top right,
+    ),
   );
   
   .two{
@@ -108,6 +110,10 @@
     }
   }
   .items{
+    $susy: (
+      columns: 12,
+      gutter-position:inside,
+    );
     @include container;
     .item{
       @include gallery(4);
