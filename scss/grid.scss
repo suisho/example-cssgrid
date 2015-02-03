@@ -23,14 +23,25 @@
 .item{
     background: #e8eab1;
 }
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+@mixin clearfix() {
+  *zoom: 1;
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
 
 .grid{
   @include clearfix();
 }
+
 .neat{
-  @import "bourbon/bourbon";
-  @import "neat/neat";
   @include outer-container();
+  @include clearfix();
 
   .two{
     @include outer-container();
@@ -70,7 +81,6 @@
       @include clearfix();
     }
   }
-  @include clearfix();
 }
 
 .susy{

@@ -16,37 +16,54 @@
 .item {
   background: #e8eab1; }
 
-.neat {
-  /* Neat 1.7.0
+/* Neat 1.7.0
  * http://neat.bourbon.io
  * Copyright 2012-2014 thoughtbot, inc.
  * MIT License */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+.grid {
+  *zoom: 1; }
+  .grid:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.neat {
+  *zoom: 1;
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
-  .neat html {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-  .neat *, .neat *:before, .neat *:after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit; }
+  margin-right: auto;
+  *zoom: 1; }
   .neat:after {
     content: "";
-    display: table;
+    display: block;
+    clear: both; }
+  .neat:after {
+    content: "";
+    display: block;
     clear: both; }
   .neat .two {
+    *zoom: 1;
     max-width: 68em;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    *zoom: 1; }
     .neat .two:after {
       content: "";
-      display: table;
+      display: block;
       clear: both; }
     .neat .two:after {
       content: "";
-      display: table;
+      display: block;
       clear: both; }
     .neat .two .side {
       float: left;
@@ -64,16 +81,18 @@
       .neat .two .main:last-child {
         margin-right: 0; }
   .neat .three {
+    *zoom: 1;
     max-width: 68em;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    *zoom: 1; }
     .neat .three:after {
       content: "";
-      display: table;
+      display: block;
       clear: both; }
     .neat .three:after {
       content: "";
-      display: table;
+      display: block;
       clear: both; }
     .neat .three .side-left {
       float: left;
@@ -98,16 +117,18 @@
       .neat .three .side-right:last-child {
         margin-right: 0; }
   .neat .items {
+    *zoom: 1;
     max-width: 68em;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    *zoom: 1; }
     .neat .items:after {
       content: "";
-      display: table;
+      display: block;
       clear: both; }
     .neat .items:after {
       content: "";
-      display: table;
+      display: block;
       clear: both; }
     .neat .items .item {
       float: left;
@@ -120,21 +141,20 @@
         margin-right: 0; }
       .neat .items .item:nth-child(3n+1) {
         clear: left; }
-    .neat .items .item:after {
-      content: "";
-      display: table;
-      clear: both; }
-  .neat:after {
-    content: "";
-    display: table;
-    clear: both; }
+    .neat .items .item {
+      *zoom: 1; }
+      .neat .items .item:after {
+        content: "";
+        display: block;
+        clear: both; }
 
 .susy .two {
+  *zoom: 1;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto; }
   .susy .two:after {
-    content: " ";
+    content: "";
     display: block;
     clear: both; }
   .susy .two .side {
@@ -158,11 +178,12 @@
     
      }
 .susy .three {
+  *zoom: 1;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto; }
   .susy .three:after {
-    content: " ";
+    content: "";
     display: block;
     clear: both; }
   .susy .three .side-left {
@@ -196,11 +217,12 @@
     
      }
 .susy .items {
+  *zoom: 1;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto; }
   .susy .items:after {
-    content: " ";
+    content: "";
     display: block;
     clear: both; }
   .susy .items .item {
