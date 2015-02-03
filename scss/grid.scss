@@ -26,38 +26,32 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 
-@mixin clearfix() {
-  *zoom: 1;
+/*@mixin clearfix() {
+  //*zoom: 1;
   &:after {
     content: "";
     display: block;
     clear: both;
   }
-}
+}*/
 
-.grid{
-  @include clearfix();
-}
 
 .neat{
-  @include outer-container();
-  @include clearfix();
-
+  //@include outer-container();
   .two{
     @include outer-container();
-    @include clearfix();
+
     .side{
       @include span-columns(4);
     }
     .main{
       @include span-columns(8);
-      @include omega();
+      @include omega(); // for IE8
     }
   }
 
   .three{
     @include outer-container();
-    @include clearfix();
     .side-left{
       @include span-columns(4);
     }
@@ -66,19 +60,15 @@
     }
     .side-right{
       @include span-columns(2);
-      @include omega();
+      @include omega()
     }
   }
   .items{
     @include outer-container();
-    @include clearfix();
-
+    
     .item{
       @include span-columns(4);
       @include omega(3n); // めんどいのはこれかなあ。
-    }
-    .item{
-      @include clearfix();
     }
   }
 }
@@ -92,7 +82,7 @@
 //    math: fluid,
 //    last-flow: to,
     use-custom : (
-      clearfix:true
+      //clearfix:true
     )
   );
   
