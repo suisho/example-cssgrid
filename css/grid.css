@@ -17,14 +17,9 @@
   background: #e8eab1; }
 
 .susy .two {
-  width: 940px;
+  width: 960px;
   margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 75%, transparent 75%);
-  background-size: 80px;
-  background-origin: content-box;
-  background-clip: content-box;
-  background-position: left top; }
+  margin-right: auto; }
   .susy .two:after {
     content: " ";
     display: block;
@@ -35,8 +30,8 @@
     
     width: 300px;
     float: left;
-    
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     
      }
   .susy .two .main {
@@ -45,7 +40,7 @@
     
     width: 620px;
     float: right;
-    
-    margin-right: 0;
+    margin-left: 10px;
+    margin-right: 10px;
     
      }
