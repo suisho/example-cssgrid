@@ -24,53 +24,12 @@
   background: #e8eab1;
 }
 
-
-.neat{
-  @import "bourbon/bourbon";
-  @import "neat/neat";
-
-  .two{
-    @include outer-container();
-    .side{
-      @include span-columns(4);
-    }
-    .main{
-      @include span-columns(8);
-      //@include omega(); // for IE8
-    }
-  }
-
-  .three{
-    @include outer-container();
-    .side-left{
-      @include span-columns(4);
-    }
-    .main{
-      @include span-columns(6);
-    }
-    .side-right{
-      @include span-columns(2);
-      @include omega()
-    }
-  }
-  .items{
-    @include outer-container();
-    .item{
-      @include span-columns(4);
-      @include omega(3n); // めんどいのはこれかなあ。
-    }
-  }
-}
-
 .susy{
   //@import "bourbon/bourbon";
   @import "susy/susy";
   $susy: (
-    columns: 12, // 絶対に設定が必要
+    columns: 12 // 絶対に設定が必要
   );
-  $responsive-layout : 8;
-  
-  
   .two{
     @include container();
     
@@ -79,38 +38,6 @@
     }
     .main{
       @include span(8 last);
-    }
-    @include susy-breakpoint(0 600px, $responsive-layout) {
-      // nested code uses an 8-column grid,
-      // starting at a 30em min-width breakpoint...
-      .side{
-        @include span(7);
-      }
-      .main{
-        @include span(1 last);
-      }
-    }
-    
-  }
-  .three{
-    @include container();
-    .side-left{
-      @include span(4);
-    }
-    .main{
-      @include span(6);
-    }
-    .side-right{
-      @include span(2 last);
-    }
-  }
-  .items{
-    @include container();
-    .item{
-      &.ie8{  
-        @include span(4 inside);
-      }
-      @include gallery(4);
     }
   }
 }
