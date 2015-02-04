@@ -36,7 +36,7 @@
     }
     .main{
       @include span-columns(8);
-      @include omega(); // for IE8
+      //@include omega(); // for IE8
     }
   }
 
@@ -68,15 +68,29 @@
   $susy: (
     columns: 12, // 絶対に設定が必要
   );
-
+  $responsive-layout : 8;
+  
+  
   .two{
     @include container();
+    
     .side{
       @include span(4);
     }
     .main{
       @include span(8 last);
     }
+    @include susy-breakpoint(0 600px, $responsive-layout) {
+      // nested code uses an 8-column grid,
+      // starting at a 30em min-width breakpoint...
+      .side{
+        @include span(7);
+      }
+      .main{
+        @include span(1 last);
+      }
+    }
+    
   }
   .three{
     @include container();
@@ -93,7 +107,10 @@
   .items{
     @include container();
     .item{
-      @include span(4 inside);
+      &.ie8{  
+        @include span(4 inside);
+      }
+      @include gallery(4);
     }
   }
 }

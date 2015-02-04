@@ -11,6 +11,7 @@ html
   body
     each type in ["neat", "susy"]
       .grid(class=type)
+        h1 #{type}
         .two.parent
           .side.block This is side
           .main.block This is main
